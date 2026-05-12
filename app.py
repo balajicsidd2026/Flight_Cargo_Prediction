@@ -224,7 +224,7 @@ st.markdown("""
 # FLIGHT DETAILS
 # ------------------------------------------------
 st.markdown('<div class="card">', unsafe_allow_html=True)
-st.markdown('<div class="section-title">📋 Flight Details</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">Flight Details</div>', unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -255,14 +255,14 @@ left, right = st.columns(2)
 with left:
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-title">🌦️ Origin Weather Details</div>',
+        '<div class="section-title">Origin Weather Details</div>',
         unsafe_allow_html=True
     )
 
-    origin_temp = st.text_input("Origin Temperature")
-    origin_rain = st.text_input("Origin Rainfall")
-    origin_wind = st.text_input("Origin Wind Speed")
-    origin_snow = st.text_input("Origin Snowfall")
+    origin_temp = st.text_input("Origin Temperature",value="30")
+    origin_rain = st.text_input("Origin Rainfall",value="24")
+    origin_wind = st.text_input("Origin Wind Speed",value="13")
+    origin_snow = st.text_input("Origin Snowfall",value="2")
 
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -270,14 +270,14 @@ with left:
 with right:
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-title">🌍 Destination Weather Details</div>',
+        '<div class="section-title">Destination Weather Details</div>',
         unsafe_allow_html=True
     )
 
-    dest_temp = st.text_input("Destination Temperature")
-    dest_rain = st.text_input("Destination Rainfall")
-    dest_wind = st.text_input("Destination Wind Speed")
-    dest_snow = st.text_input("Destination Snowfall")
+    dest_temp = st.text_input("Destination Temperature",value="35")
+    dest_rain = st.text_input("Destination Rainfall",value="10")
+    dest_wind = st.text_input("Destination Wind Speed",value="23")
+    dest_snow = st.text_input("Destination Snowfall",value="0")
 
     st.markdown('</div>', unsafe_allow_html=True)
 
